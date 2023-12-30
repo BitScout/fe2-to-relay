@@ -7,6 +7,7 @@ $port= new-Object System.IO.Ports.SerialPort $COM,9600,None,8,one
 $port.open()
 # Das Öffnen des Ports resettet den Arduino, darum warten wir vor dem Senden kurz
 sleep 3
+
 # Sende "x", da der Arduino nur auf dieses Zeichen hört, um Fehlauslösungen zu vermeiden
-$port.WriteLine(“x”)
+$port.WriteLine("x")
 $port.Close()
