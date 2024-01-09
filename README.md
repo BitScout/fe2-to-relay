@@ -14,7 +14,7 @@ Diese Datei enthält die Befehle, die bei einem Alarm ausgeführt werden sollen.
 Sie wird in die `fe-to-relay.exe` verpackt.
 
 
-### `fe-to-relay.exe
+### `fe-to-relay.exe`
 
 Wird erzeugt mit der fe-to-relay.ps1 als Inhalt. Die EXE ist bei Alarm auszuführen, 
 siehe auch https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480642/Programm+ausf+hren
