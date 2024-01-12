@@ -20,6 +20,21 @@ Wird erzeugt mit der fe-to-relay.ps1 als Inhalt. Die EXE ist bei Alarm auszufüh
 siehe auch https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/219480642/Programm+ausf+hren
 
 
+## Erzeugen der EXE
+
+### ps2exe installieren
+
+1. PowerShell-Konsole als Administrator öffnen
+2. Den Befehl `Install-Module ps2exe` ausführen
+3. Abfragen mit `j` bestätigen
+
+### Umwandlung
+
+1. In der Powershell in das Projektverzeichnis gehen und `ps2exe .\fe2-to-relay.ps1 .\fe2-to-relay.exe` ausführen
+2. Falls ein Fehler gemeldet wird, `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process` ausführen, 
+um die Ausführung einmalig zu erlauben, dann obiges Kommando erneut versuchen.
+
+
 ## Danke an
 
 - https://superuser.com/a/868341

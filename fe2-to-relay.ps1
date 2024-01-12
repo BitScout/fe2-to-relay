@@ -13,7 +13,12 @@ foreach($portName in $portList) {
 	$port.ReadTimeout = 200
 	$port.WriteTimeout = 200
 	
-	$port.open()
+	try {
+		$port.open()
+	} catch {
+		Write-Host "Port konnte nicht geoeffnet werden."
+	}
+	
 	# Das Öffnen des Ports resettet den Arduino, darum warten wir vor dem Senden kurz
 	Start-Sleep -Seconds 1
 
@@ -22,5 +27,5 @@ foreach($portName in $portList) {
 	$port.Close()
 }
 
-Write-Host "Programm wird nach 30 Sekunden geschlossen..."
-Start-Sleep -Seconds 30
+Write-Host "Programm wird nach 10 Sekunden geschlossen..."
+Start-Sleep -Seconds 10
