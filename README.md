@@ -33,11 +33,3 @@ siehe auch https://alamos-support.atlassian.net/wiki/spaces/documentation/pages/
 1. In der Powershell in das Projektverzeichnis gehen und `ps2exe .\fe2-to-relay.ps1 .\fe2-to-relay.exe` ausführen
 2. Falls ein Fehler gemeldet wird, `Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process` ausführen, 
 um die Ausführung einmalig zu erlauben, dann obiges Kommando erneut versuchen.
-
-
-## Danke an
-
-- https://superuser.com/a/868341
-- https://forum.arduino.cc/t/read-write-serial-communication-thru-cmd/331613
-- https://batchloaf.wordpress.com/2013/02/12/simple-trick-for-sending-characters-to-a-serial-port-in-windows/
-
